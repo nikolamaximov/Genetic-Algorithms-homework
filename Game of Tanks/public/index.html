@@ -1,0 +1,34 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <script src="util.js"></script>
+        <script src="enums.js"></script>
+        <script src="vector.js"></script>
+        <script src="collisions.js"></script>
+        <script src="genetic.js"></script>
+        <script src="draw.js"></script>
+        <script src="movement.js"></script>
+        <script src="index.js"></script>
+
+        <div style="display:inline-block">
+            <canvas id="area" width="1000" height="750" style="border: 2px solid steelblue"></canvas>
+        </div>
+
+        <div style="vertical-align: top; width: 300px; height: 753px; border:1px solid black; display:inline-block">
+            <input id="reset-button" style="margin-left: 10px; margin-top: 10px;" type="button" value="RESET"></button>
+            <div style="margin-left: 10px; margin-top: 10px;" id="simulation-time"></div>
+
+            <div style="margin-left: 10px; margin-top: 10px;">Elitism: <input id="elitism" value="2" type="text"/></div>
+            <div style="margin-left: 10px; margin-top: 10px;">Mutation rate: <input id="mutation-rate" value="0.25" type="text"/></div>
+
+            <div style="margin-left: 10px; margin-top: 10px;">
+            <input type="checkbox" id="checkbox" onclick="showGrid()"> SHOW GRID
+            </div>
+
+            <div id="info-content" style="border: 1px solid black; margin-right: 10px; margin-left: 10px; margin-top: 10px;"></div>
+      </div>
+
+    </body>
+</html>
